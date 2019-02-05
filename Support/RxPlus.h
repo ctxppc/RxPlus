@@ -1,4 +1,4 @@
-// RxPlus © 2019 Creatunit
+// RxPlus © 2019 Constantino Tsarouhas
 
 @import UIKit;
 

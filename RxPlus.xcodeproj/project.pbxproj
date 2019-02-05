@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		4F7AE6CF2209DB2B00C56227 /* RxPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F7AE6CD2209DB2B00C56227 /* RxPlus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FCA97A02209E13F00660B08 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA979E2209E13F00660B08 /* RxSwift.framework */; };
+		4FCA97A12209E13F00660B08 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA979F2209E13F00660B08 /* RxCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F7AE6CA2209DB2B00C56227 /* RxPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7AE6CD2209DB2B00C56227 /* RxPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxPlus.h; sourceTree = "<group>"; };
 		4F7AE6CE2209DB2B00C56227 /* RxPlus.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RxPlus.plist; sourceTree = "<group>"; };
+		4FCA97972209DFC200660B08 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
+		4FCA979E2209E13F00660B08 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		4FCA979F2209E13F00660B08 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +26,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FCA97A02209E13F00660B08 /* RxSwift.framework in Frameworks */,
+				4FCA97A12209E13F00660B08 /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +39,7 @@
 			children = (
 				4F7AE6CC2209DB2B00C56227 /* Support */,
 				4F7AE6CB2209DB2B00C56227 /* Products */,
+				4FCA979D2209E13F00660B08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +54,20 @@
 		4F7AE6CC2209DB2B00C56227 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				4F7AE6CD2209DB2B00C56227 /* RxPlus.h */,
 				4F7AE6CE2209DB2B00C56227 /* RxPlus.plist */,
+				4F7AE6CD2209DB2B00C56227 /* RxPlus.h */,
+				4FCA97972209DFC200660B08 /* Cartfile */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		4FCA979D2209E13F00660B08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA979F2209E13F00660B08 /* RxCocoa.framework */,
+				4FCA979E2209E13F00660B08 /* RxSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,10 +110,11 @@
 			attributes = {
 				CLASSPREFIX = RxPlus;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = Creatunit;
+				ORGANIZATIONNAME = "Constantino Tsarouhas";
 				TargetAttributes = {
 					4F7AE6C92209DB2B00C56227 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -264,6 +283,7 @@
 		4F7AE6D32209DB2B00C56227 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -271,6 +291,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -278,6 +302,8 @@
 					"@loader_path/Frameworks",
 				);
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -285,6 +311,7 @@
 		4F7AE6D42209DB2B00C56227 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -292,6 +319,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,6 +330,7 @@
 					"@loader_path/Frameworks",
 				);
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
