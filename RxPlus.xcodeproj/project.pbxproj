@@ -14,7 +14,26 @@
 		4FCA97BD2209F41D00660B08 /* Bound Table View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA97BC2209F41D00660B08 /* Bound Table View Controller.swift */; };
 		4FCA97BF2209F83900660B08 /* Tree Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA97BE2209F83900660B08 /* Tree Collection.swift */; };
 		4FCA97C12209F95000660B08 /* Observable Tree Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA97C02209F95000660B08 /* Observable Tree Collection.swift */; };
+		4FCA97C7220A080D00660B08 /* Fetched Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA97C6220A080D00660B08 /* Fetched Collection.swift */; };
+		4FCA97D5220A0F8900660B08 /* DepthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA97D2220A0F7900660B08 /* DepthKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FCA97D1220A0F7900660B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FCA97CA220A0F7900660B08 /* DepthKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "DepthKit::DepthKit::Product";
+			remoteInfo = DepthKit;
+		};
+		4FCA97D3220A0F7900660B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FCA97CA220A0F7900660B08 /* DepthKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "DepthKit::DepthKit Tests::Product";
+			remoteInfo = "DepthKit Tests";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4F7AE6CA2209DB2B00C56227 /* RxPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +46,8 @@
 		4FCA97BC2209F41D00660B08 /* Bound Table View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bound Table View Controller.swift"; sourceTree = "<group>"; };
 		4FCA97BE2209F83900660B08 /* Tree Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tree Collection.swift"; sourceTree = "<group>"; };
 		4FCA97C02209F95000660B08 /* Observable Tree Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable Tree Collection.swift"; sourceTree = "<group>"; };
+		4FCA97C6220A080D00660B08 /* Fetched Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetched Collection.swift"; sourceTree = "<group>"; };
+		4FCA97CA220A0F7900660B08 /* DepthKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DepthKit.xcodeproj; path = ../../DepthKit/DepthKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FCA97D5220A0F8900660B08 /* DepthKit.framework in Frameworks */,
 				4FCA97A02209E13F00660B08 /* RxSwift.framework in Frameworks */,
 				4FCA97A12209E13F00660B08 /* RxCocoa.framework in Frameworks */,
 			);
@@ -66,6 +88,7 @@
 				4F7AE6CE2209DB2B00C56227 /* RxPlus.plist */,
 				4F7AE6CD2209DB2B00C56227 /* RxPlus.h */,
 				4FCA97972209DFC200660B08 /* Cartfile */,
+				4FCA97CA220A0F7900660B08 /* DepthKit.xcodeproj */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -76,6 +99,7 @@
 				4FCA97952209DE8100660B08 /* Observable Collection.swift */,
 				4FCA97BE2209F83900660B08 /* Tree Collection.swift */,
 				4FCA97C02209F95000660B08 /* Observable Tree Collection.swift */,
+				4FCA97C6220A080D00660B08 /* Fetched Collection.swift */,
 				4FCA97BC2209F41D00660B08 /* Bound Table View Controller.swift */,
 			);
 			path = "Observable Collection";
@@ -88,6 +112,15 @@
 				4FCA979E2209E13F00660B08 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FCA97CB220A0F7900660B08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FCA97D2220A0F7900660B08 /* DepthKit.framework */,
+				4FCA97D4220A0F7900660B08 /* DepthKit Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,12 +181,35 @@
 			mainGroup = 4F7AE6C02209DB2B00C56227;
 			productRefGroup = 4F7AE6CB2209DB2B00C56227 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4FCA97CB220A0F7900660B08 /* Products */;
+					ProjectRef = 4FCA97CA220A0F7900660B08 /* DepthKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4F7AE6C92209DB2B00C56227 /* RxPlus */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4FCA97D2220A0F7900660B08 /* DepthKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DepthKit.framework;
+			remoteRef = 4FCA97D1220A0F7900660B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4FCA97D4220A0F7900660B08 /* DepthKit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "DepthKit Tests.xctest";
+			remoteRef = 4FCA97D3220A0F7900660B08 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4F7AE6C82209DB2B00C56227 /* Resources */ = {
@@ -172,6 +228,7 @@
 			files = (
 				4FCA97BD2209F41D00660B08 /* Bound Table View Controller.swift in Sources */,
 				4FCA97BF2209F83900660B08 /* Tree Collection.swift in Sources */,
+				4FCA97C7220A080D00660B08 /* Fetched Collection.swift in Sources */,
 				4FCA97962209DE8100660B08 /* Observable Collection.swift in Sources */,
 				4FCA97C12209F95000660B08 /* Observable Tree Collection.swift in Sources */,
 			);

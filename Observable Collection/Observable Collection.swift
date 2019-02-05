@@ -10,7 +10,7 @@ public protocol ObservableCollection : class, RandomAccessCollection {
 	
 }
 
-/// A function that does work in response to an observed change.
+/// A function that does work in response to observed changes.
 public typealias CollectionChangeHandler = ([CollectionChange]) -> ()
 
 public enum CollectionChange {

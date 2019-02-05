@@ -12,7 +12,7 @@ public protocol ObservableTreeCollection : TreeCollection, ObservableCollection 
 	
 }
 
-/// A function that does work in response to an observed change.
+/// A function that does work in response to observed changes.
 public typealias TreeCollectionChangeHandler = ([TreeCollectionChange]) -> ()
 
 public enum TreeCollectionChange {
