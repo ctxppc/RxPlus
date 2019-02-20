@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F1F9BB2221C5ABA002F1CFB /* Reactive Map Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F9BB1221C5ABA002F1CFB /* Reactive Map Collection.swift */; };
+		4F33F7BB22198F7200935136 /* Reactive Slice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F33F7BA22198F7200935136 /* Reactive Slice.swift */; };
+		4F33F7C22219972700935136 /* Observable Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A9EDB22131F8B0014FF44 /* Observable Collection.swift */; };
+		4F33F7C72219AE5A00935136 /* Observer Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F33F7C62219AE5A00935136 /* Observer Bag.swift */; };
+		4F7728182219877E00E163B8 /* Reactive Filter Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7728172219877E00E163B8 /* Reactive Filter Collection.swift */; };
+		4F77281A2219879200E163B8 /* Reactive Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7728192219879200E163B8 /* Reactive Collection.swift */; };
 		4F7AE6CF2209DB2B00C56227 /* RxPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F7AE6CD2209DB2B00C56227 /* RxPlus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FCA97962209DE8100660B08 /* Observable Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA97952209DE8100660B08 /* Observable Collection.swift */; };
+		4F9A9EE0221326440014FF44 /* Collection Difference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A9EDF221326440014FF44 /* Collection Difference.swift */; };
 		4FCA97A02209E13F00660B08 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA979E2209E13F00660B08 /* RxSwift.framework */; };
 		4FCA97A12209E13F00660B08 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA979F2209E13F00660B08 /* RxCocoa.framework */; };
-		4FCA97BD2209F41D00660B08 /* Bound Table View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA97BC2209F41D00660B08 /* Bound Table View Controller.swift */; };
 		4FCA97BF2209F83900660B08 /* Tree Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA97BE2209F83900660B08 /* Tree Collection.swift */; };
-		4FCA97C12209F95000660B08 /* Observable Tree Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA97C02209F95000660B08 /* Observable Tree Collection.swift */; };
-		4FCA97C7220A080D00660B08 /* Fetched Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA97C6220A080D00660B08 /* Fetched Collection.swift */; };
 		4FCA97D5220A0F8900660B08 /* DepthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA97D2220A0F7900660B08 /* DepthKit.framework */; };
+		4FE9E7982218866100252679 /* Tree Collection Table View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE9E7972218866100252679 /* Tree Collection Table View Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +40,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F1F9BB1221C5ABA002F1CFB /* Reactive Map Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive Map Collection.swift"; sourceTree = "<group>"; };
+		4F33F7BA22198F7200935136 /* Reactive Slice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive Slice.swift"; sourceTree = "<group>"; };
+		4F33F7C62219AE5A00935136 /* Observer Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observer Bag.swift"; sourceTree = "<group>"; };
+		4F7728172219877E00E163B8 /* Reactive Filter Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive Filter Collection.swift"; sourceTree = "<group>"; };
+		4F7728192219879200E163B8 /* Reactive Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive Collection.swift"; sourceTree = "<group>"; };
 		4F7AE6CA2209DB2B00C56227 /* RxPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7AE6CD2209DB2B00C56227 /* RxPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxPlus.h; sourceTree = "<group>"; };
 		4F7AE6CE2209DB2B00C56227 /* RxPlus.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RxPlus.plist; sourceTree = "<group>"; };
-		4FCA97952209DE8100660B08 /* Observable Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable Collection.swift"; sourceTree = "<group>"; };
+		4F9A9EDB22131F8B0014FF44 /* Observable Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable Collection.swift"; sourceTree = "<group>"; };
+		4F9A9EDF221326440014FF44 /* Collection Difference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection Difference.swift"; sourceTree = "<group>"; };
 		4FCA97972209DFC200660B08 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Cartfile; path = ../Cartfile; sourceTree = "<group>"; };
 		4FCA979E2209E13F00660B08 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		4FCA979F2209E13F00660B08 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		4FCA97BC2209F41D00660B08 /* Bound Table View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bound Table View Controller.swift"; sourceTree = "<group>"; };
 		4FCA97BE2209F83900660B08 /* Tree Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tree Collection.swift"; sourceTree = "<group>"; };
-		4FCA97C02209F95000660B08 /* Observable Tree Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable Tree Collection.swift"; sourceTree = "<group>"; };
-		4FCA97C6220A080D00660B08 /* Fetched Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetched Collection.swift"; sourceTree = "<group>"; };
 		4FCA97CA220A0F7900660B08 /* DepthKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DepthKit.xcodeproj; path = ../../DepthKit/DepthKit.xcodeproj; sourceTree = "<group>"; };
+		4FE9E7972218866100252679 /* Tree Collection Table View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tree Collection Table View Controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +72,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F7728122219876F00E163B8 /* Reactive Collections */ = {
+			isa = PBXGroup;
+			children = (
+				4F7728192219879200E163B8 /* Reactive Collection.swift */,
+				4F33F7BA22198F7200935136 /* Reactive Slice.swift */,
+				4F1F9BB1221C5ABA002F1CFB /* Reactive Map Collection.swift */,
+				4F7728172219877E00E163B8 /* Reactive Filter Collection.swift */,
+				4F9A9EDB22131F8B0014FF44 /* Observable Collection.swift */,
+			);
+			path = "Reactive Collections";
+			sourceTree = "<group>";
+		};
 		4F7AE6C02209DB2B00C56227 = {
 			isa = PBXGroup;
 			children = (
-				4FCA97942209DE5000660B08 /* Observable Collection */,
+				4F7728122219876F00E163B8 /* Reactive Collections */,
+				4F9A9EDF221326440014FF44 /* Collection Difference.swift */,
+				4FCA97BE2209F83900660B08 /* Tree Collection.swift */,
+				4FE9E7972218866100252679 /* Tree Collection Table View Controller.swift */,
+				4F33F7C62219AE5A00935136 /* Observer Bag.swift */,
 				4F7AE6CC2209DB2B00C56227 /* Support */,
 				4F7AE6CB2209DB2B00C56227 /* Products */,
 				4FCA979D2209E13F00660B08 /* Frameworks */,
@@ -91,18 +115,6 @@
 				4FCA97CA220A0F7900660B08 /* DepthKit.xcodeproj */,
 			);
 			path = Support;
-			sourceTree = "<group>";
-		};
-		4FCA97942209DE5000660B08 /* Observable Collection */ = {
-			isa = PBXGroup;
-			children = (
-				4FCA97952209DE8100660B08 /* Observable Collection.swift */,
-				4FCA97BE2209F83900660B08 /* Tree Collection.swift */,
-				4FCA97C02209F95000660B08 /* Observable Tree Collection.swift */,
-				4FCA97C6220A080D00660B08 /* Fetched Collection.swift */,
-				4FCA97BC2209F41D00660B08 /* Bound Table View Controller.swift */,
-			);
-			path = "Observable Collection";
 			sourceTree = "<group>";
 		};
 		4FCA979D2209E13F00660B08 /* Frameworks */ = {
@@ -226,11 +238,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FCA97BD2209F41D00660B08 /* Bound Table View Controller.swift in Sources */,
+				4F9A9EE0221326440014FF44 /* Collection Difference.swift in Sources */,
+				4F1F9BB2221C5ABA002F1CFB /* Reactive Map Collection.swift in Sources */,
+				4F33F7C72219AE5A00935136 /* Observer Bag.swift in Sources */,
+				4F77281A2219879200E163B8 /* Reactive Collection.swift in Sources */,
+				4FE9E7982218866100252679 /* Tree Collection Table View Controller.swift in Sources */,
 				4FCA97BF2209F83900660B08 /* Tree Collection.swift in Sources */,
-				4FCA97C7220A080D00660B08 /* Fetched Collection.swift in Sources */,
-				4FCA97962209DE8100660B08 /* Observable Collection.swift in Sources */,
-				4FCA97C12209F95000660B08 /* Observable Tree Collection.swift in Sources */,
+				4F33F7BB22198F7200935136 /* Reactive Slice.swift in Sources */,
+				4F7728182219877E00E163B8 /* Reactive Filter Collection.swift in Sources */,
+				4F33F7C22219972700935136 /* Observable Collection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
