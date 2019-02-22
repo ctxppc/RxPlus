@@ -8,7 +8,7 @@ import RxSwift
 /// Just like `LazyMapCollection`, a reactive map collection uses its base collection's indices and transforms elements on demand. Observed collection differences are simply mapped to use the transformed element. This mapping is done eagerly.
 public final class ReactiveMapCollection<Base : ReactiveCollection, Element> {
 	
-	/// Creates a reactice map collection over given base collection and with given transform function.
+	/// Creates a reactive map collection over given base collection and with given transform function.
 	fileprivate init(base: Base, transform: @escaping Transform) {
 		self.base = base
 		self.transform = transform
@@ -100,12 +100,6 @@ extension ReactiveMapCollection : ObservableType {
 	
 	public func subscribe<Observer : ObserverType>(_ observer: Observer) -> Disposable where Observer.E == E {
 		return observers.subscribe(observer)
-	}
-	
-	/// Emits an interdependent collection of changes to observers.
-	fileprivate func emit<Changes : Collection>(_ changes: Changes) where Changes.Element == CollectionDifference<Element>.Change {
-		let difference = CollectionDifference(changes) !! "Invalid difference"
-		observers.emit(.next(difference))
 	}
 	
 }

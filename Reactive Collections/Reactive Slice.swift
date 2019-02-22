@@ -167,12 +167,6 @@ extension ReactiveSlice : ObservableType {
 		return observers.subscribe(observer)
 	}
 	
-	/// Emits an interdependent collection of changes to observers.
-	fileprivate func emit<Changes : Collection>(_ changes: Changes) where Changes.Element == CollectionDifference<Element>.Change {
-		let difference = CollectionDifference(changes) !! "Invalid difference"
-		observers.emit(.next(difference))
-	}
-	
 }
 
 extension ReactiveSlice : ReactiveCollection {}
