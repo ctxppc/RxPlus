@@ -4,7 +4,7 @@ import RxSwift
 
 /// A collection with reference semantics that can be observed for changes.
 ///
-/// Reactive collections can be used to continuously monitor for and react to changes to a mutable collection of elements. Reactive collections act like lazy collections but whose contents can change in response to internal or external sources. When a reactive collection changes, it emits a `CollectionDifference` value describing the difference between the previous and new state. A collection emits a completion event before it's deallocated and never emits errors.
+/// Reactive collections can be used to continuously monitor for and react to changes to a mutable collection of elements. Reactive collections act like lazy collections but whose contents can change in response to internal or external sources. When a reactive collection changes, it emits a `Change` value describing the difference between the previous and new state. A reactive collection emits a completion event before it's deallocated and never emits errors.
 ///
 /// Reactive collections are not thread-safe. Unless the concrete type allows otherwise, a reactive collection must observe and emit changes and be accessed on the same thread.
 ///

@@ -87,6 +87,11 @@ open class BoundTableViewController<PresentedCollection : ReactiveCollection & T
 		return (collection !! "No collection available")[indexPath] as? T
 	}
 	
+	/// The collection's index paths.
+	///
+	/// This property is used to map offsets to index paths when observing differences to the presented collection.
+	fileprivate var indexPaths: [IndexPath] = []
+	
 }
 
 extension BoundTableViewController : ObserverType {
@@ -108,12 +113,32 @@ extension BoundTableViewController : ObserverType {
 		tableView.beginUpdates()
 		defer { tableView.endUpdates() }
 		
+		func indexPath(at offset: Int) -> IndexPath {
+			let collection = self.collection !! "No collection available"
+			return collection.index(collection.startIndex, offsetBy: offset)	// FIXME: erroneous offset in previous collection
+		}
+		
+		
+		
 		func observe(_ change: E.Change) {
-			TODO.unimplemented
+			switch change {
+				
+				case .insert(offset: let offset, element: _, associatedWith: let otherOffset?):
+				tableView.moveRow(at: indexPath(at: otherOffset), to: indexPath(at: offset))
+				
+				case .insert(offset: let offset, element: _, associatedWith: nil):
+				tableView.insertRows(at: [indexPath(at: offset)], with: .automatic)
+				
+				case .remove(offset: _, element: _, associatedWith: _?):
+				break
+				
+				case .remove(offset: let offset, element: _, associatedWith: nil):
+				tableView.deleteRows(at: [indexPath(at: offset)], with: .automatic)
+				
+			}
 		}
 		
 		difference.insertions.forEach(observe)
-		difference.removals.forEach(observe)
 		
 	}
 	

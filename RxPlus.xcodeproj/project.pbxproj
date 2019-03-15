@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F1F9BB2221C5ABA002F1CFB /* Reactive Map Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F9BB1221C5ABA002F1CFB /* Reactive Map Collection.swift */; };
-		4F33F7BB22198F7200935136 /* Reactive Slice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F33F7BA22198F7200935136 /* Reactive Slice.swift */; };
-		4F33F7C22219972700935136 /* Observable Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A9EDB22131F8B0014FF44 /* Observable Collection.swift */; };
 		4F33F7C72219AE5A00935136 /* Observer Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F33F7C62219AE5A00935136 /* Observer Bag.swift */; };
 		4F44774B22297E2700275C06 /* Table View Cell Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F44774A22297E2700275C06 /* Table View Cell Presentable.swift */; };
 		4F44774D222985DE00275C06 /* Table View Section Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F44774C222985DE00275C06 /* Table View Section Presentable.swift */; };
 		4F44774F222987A400275C06 /* Table View Section View Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F44774E222987A400275C06 /* Table View Section View Presentable.swift */; };
-		4F4477512229896D00275C06 /* Bound Table View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE9E7972218866100252679 /* Bound Table View Controller.swift */; };
-		4F7728182219877E00E163B8 /* Reactive Filter Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7728172219877E00E163B8 /* Reactive Filter Collection.swift */; };
-		4F77281A2219879200E163B8 /* Reactive Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7728192219879200E163B8 /* Reactive Collection.swift */; };
+		4F6ACDBD222AD3B500DEA600 /* Reactive Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7728192219879200E163B8 /* Reactive Collection.swift */; };
+		4F6ACDBE222AD3B500DEA600 /* Reactive Slice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F33F7BA22198F7200935136 /* Reactive Slice.swift */; };
+		4F6ACDBF222AD3B500DEA600 /* Reactive Map Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1F9BB1221C5ABA002F1CFB /* Reactive Map Collection.swift */; };
+		4F6ACDC0222AD3B500DEA600 /* Reactive Filter Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7728172219877E00E163B8 /* Reactive Filter Collection.swift */; };
+		4F6ACDC1222AD3B500DEA600 /* Observable Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A9EDB22131F8B0014FF44 /* Observable Collection.swift */; };
+		4F6ACDC2222AD3B500DEA600 /* Collection Difference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A9EDF221326440014FF44 /* Collection Difference.swift */; };
+		4F6ACDC3222AD3BC00DEA600 /* Bound Table View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE9E7972218866100252679 /* Bound Table View Controller.swift */; };
 		4F7AE6CF2209DB2B00C56227 /* RxPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F7AE6CD2209DB2B00C56227 /* RxPlus.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F9A9EE0221326440014FF44 /* Collection Difference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A9EDF221326440014FF44 /* Collection Difference.swift */; };
 		4FCA97A02209E13F00660B08 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA979E2209E13F00660B08 /* RxSwift.framework */; };
 		4FCA97A12209E13F00660B08 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCA979F2209E13F00660B08 /* RxCocoa.framework */; };
 		4FCA97BF2209F83900660B08 /* Tree Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCA97BE2209F83900660B08 /* Tree Collection.swift */; };
@@ -49,6 +49,7 @@
 		4F44774A22297E2700275C06 /* Table View Cell Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Table View Cell Presentable.swift"; sourceTree = "<group>"; };
 		4F44774C222985DE00275C06 /* Table View Section Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Table View Section Presentable.swift"; sourceTree = "<group>"; };
 		4F44774E222987A400275C06 /* Table View Section View Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Table View Section View Presentable.swift"; sourceTree = "<group>"; };
+		4F6ACDC9222AD95E00DEA600 /* Reactive Concatenation Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive Concatenation Collection.swift"; sourceTree = "<group>"; };
 		4F7728172219877E00E163B8 /* Reactive Filter Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive Filter Collection.swift"; sourceTree = "<group>"; };
 		4F7728192219879200E163B8 /* Reactive Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive Collection.swift"; sourceTree = "<group>"; };
 		4F7AE6CA2209DB2B00C56227 /* RxPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +97,7 @@
 				4F33F7BA22198F7200935136 /* Reactive Slice.swift */,
 				4F1F9BB1221C5ABA002F1CFB /* Reactive Map Collection.swift */,
 				4F7728172219877E00E163B8 /* Reactive Filter Collection.swift */,
+				4F6ACDC9222AD95E00DEA600 /* Reactive Concatenation Collection.swift */,
 				4F9A9EDB22131F8B0014FF44 /* Observable Collection.swift */,
 			);
 			path = "Reactive Collections";
@@ -255,18 +257,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F9A9EE0221326440014FF44 /* Collection Difference.swift in Sources */,
-				4F1F9BB2221C5ABA002F1CFB /* Reactive Map Collection.swift in Sources */,
+				4F6ACDC2222AD3B500DEA600 /* Collection Difference.swift in Sources */,
 				4F33F7C72219AE5A00935136 /* Observer Bag.swift in Sources */,
-				4F77281A2219879200E163B8 /* Reactive Collection.swift in Sources */,
 				4F44774B22297E2700275C06 /* Table View Cell Presentable.swift in Sources */,
 				4FCA97BF2209F83900660B08 /* Tree Collection.swift in Sources */,
-				4F33F7BB22198F7200935136 /* Reactive Slice.swift in Sources */,
 				4F44774F222987A400275C06 /* Table View Section View Presentable.swift in Sources */,
 				4F44774D222985DE00275C06 /* Table View Section Presentable.swift in Sources */,
-				4F4477512229896D00275C06 /* Bound Table View Controller.swift in Sources */,
-				4F7728182219877E00E163B8 /* Reactive Filter Collection.swift in Sources */,
-				4F33F7C22219972700935136 /* Observable Collection.swift in Sources */,
+				4F6ACDBF222AD3B500DEA600 /* Reactive Map Collection.swift in Sources */,
+				4F6ACDBE222AD3B500DEA600 /* Reactive Slice.swift in Sources */,
+				4F6ACDC1222AD3B500DEA600 /* Observable Collection.swift in Sources */,
+				4F6ACDC3222AD3BC00DEA600 /* Bound Table View Controller.swift in Sources */,
+				4F6ACDBD222AD3B500DEA600 /* Reactive Collection.swift in Sources */,
+				4F6ACDC0222AD3B500DEA600 /* Reactive Filter Collection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
